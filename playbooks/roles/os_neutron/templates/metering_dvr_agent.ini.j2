@@ -1,0 +1,9 @@
+# {{ ansible_managed }}
+
+[DEFAULT]
+verbose = True
+driver = neutron.services.metering.drivers.iptables.iptables_driver.IptablesMeteringDriver
+interface_driver = neutron.agent.linux.interface.OVSInterfaceDriver
+
+[AGENT]
+report_interval = 30

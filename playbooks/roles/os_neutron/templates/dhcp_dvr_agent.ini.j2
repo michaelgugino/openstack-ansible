@@ -1,0 +1,12 @@
+[DEFAULT]
+verbose = True
+interface_driver = neutron.agent.linux.interface.OVSInterfaceDriver
+dhcp_driver = neutron.agent.linux.dhcp.Dnsmasq
+enable_isolated_metadata = True
+dhcp_domain = cloud-powered.com
+dnsmasq_config_file = /etc/neutron/dnsmasq-neutron-dvr.conf
+dnsmasq_dns_servers = 192.168.10.2
+dnsmasq_base_log_dir = /var/log/neutron/dnsmasq
+dnsmasq_lease_max = 16777216
+
+[AGENT]

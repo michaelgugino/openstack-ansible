@@ -1,0 +1,16 @@
+# {{ ansible_managed }}
+
+[ovs]
+local_ip = 192.168.110.142
+bridge_mappings = dvr_external:br-ex
+
+[agent]
+tunnel_types = vxlan
+l2_population = True
+arp_responder = True
+enable_distributed_routing = True
+
+[securitygroup]
+firewall_driver = neutron.agent.linux.iptables_firewall.OVSHybridIptablesFirewallDriver
+enable_security_group = True
+enable_ipset = True

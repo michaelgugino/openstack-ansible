@@ -1,0 +1,21 @@
+# {{ ansible_managed }}
+
+[DEFAULT]
+verbose = True
+debug = False
+auth_plugin = password
+auth_url = http://192.168.1.3:35357
+auth_uri = http://192.168.1.3:5000
+auth_region = RegionOne
+project_domain_id = default
+user_domain_id = default
+project_name = service
+username = neutron
+password = <PASSWORD>
+endpoint_type = adminURL
+nova_metadata_ip = 192.168.1.3
+nova_metadata_port = 8775
+metadata_proxy_shared_secret = <PASSWORD>
+metadata_workers = 2
+metadata_backlog = 128
+cache_url = memory://?default_ttl=5

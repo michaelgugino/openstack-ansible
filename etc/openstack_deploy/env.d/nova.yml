@@ -69,6 +69,8 @@ container_skel:
     belongs_to:
       - compute_containers
     contains:
+      - neutron_l3_agent
+      - neutron_metadata_agent
       - neutron_openvswitch_agent
       - nova_compute
     properties:
