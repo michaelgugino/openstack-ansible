@@ -69,7 +69,7 @@ container_skel:
     belongs_to:
       - compute_containers
     contains:
-      - neutron_linuxbridge_agent
+      - neutron_openvswitch_agent
       - nova_compute
     properties:
       is_metal: true
